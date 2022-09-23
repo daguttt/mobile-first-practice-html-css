@@ -1,0 +1,162 @@
+/* ============================================= */
+/* RESET */
+/* ============================================= */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: var(--dark-color);
+  text-decoration: none;
+}
+
+
+
+/* ============================================= */
+/* VARIABLES Y ESTILOS GENERALES */
+/* ============================================= */
+:root {
+  --primary-color: #3099d5;
+  --light-color: #fff;
+  --dark-color: #000;
+  --container-width: 1200px
+}
+
+.container {
+  padding: 12px;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spacing {
+  margin-bottom: 30px;
+}
+
+/* ============================================= */
+/* HEADER */
+/* ============================================= */
+.header__inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+.header__inner h2 {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.header__inner nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 12px;
+  align-items: baseline;
+}
+
+.header__inner nav ul li {
+  text-align: center;
+}
+
+.header__inner nav ul li:last-child {
+  font-weight: 800;
+  margin-left: 12px;
+}
+
+.header__inner li a {
+  text-transform: uppercase;
+}
+
+/* ============================================= */
+/* BANNER */
+/* ============================================= */
+.banner {
+  height: 40vh;
+  background-image: url(images/man-typing-on-computer.jpg);
+  background-size: cover;
+  color: var(--light-color);
+  text-align: center;
+}
+
+.transbox {
+  width: 100%;
+  height: 100%;
+  background-color: #00000060;
+  padding: 12px;
+}
+
+.transbox p {
+  /* To not overflow container width */
+  max-width: calc(var(--container-width) - 50px);
+}
+
+/* ============================================= */
+/* MAIN */
+/* ============================================= */
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.product {
+  max-width: 250px;
+
+}
+
+.product__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.product__header figure {
+  width: 80px;
+  height: 80px;
+  display: grid;
+  place-content: center;
+  border-radius: 100%;
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.product__header figure .material-icons {
+  font-size: 36px;
+}
+
+.product__body p {
+  text-align: justify;
+}
+
+/* ============================================= */
+/* FOOTER */
+/* ============================================= */
