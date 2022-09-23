@@ -4,10 +4,118 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Styles -->
     <link rel="stylesheet" href="main.css" />
     <title>My Mobile First Practice</title>
   </head>
   <body>
-    <h1>Hello World!</h1>
+    <header class="header">
+      <section class="header__inner container">
+        <h2>SOFTGRAY</h2>
+        <nav>
+          <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#jobs">Jobs</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#">+81-00-0000-0000</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <section class="banner spacing">
+      <div class="transbox center">
+        <h1>Creative Solutions</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius in
+          rerum ipsam, quod odio vero quibusdam sed et, at consequuntur est,
+          autem hic? Eligendi assumenda sit aliquam inventore id blanditiis.
+        </p>
+      </div>
+    </section>
+    <main>
+      <section class="container">
+        <section class="products spacing" id="products">
+          <!-- Consulting -->
+          <article class="product">
+            <header class="product__header">
+              <figure>
+                <span class="material-icons">chat_bubble_outline</span>
+              </figure>
+              <h3>Consulting</h3>
+            </header>
+            <div class="product__body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                voluptatum ea consectetur, vero vitae inventore commodi culpa
+                illo tempora iusto eum?
+              </p>
+            </div>
+          </article>
+          <!-- Developing -->
+          <article class="product">
+            <header class="product__header">
+              <figure>
+                <span class="material-icons">code</span>
+              </figure>
+              <h3>Consulting</h3>
+            </header>
+            <div class="product__body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                voluptatum ea consectetur, vero vitae inventore commodi culpa
+                illo tempora iusto eum?
+              </p>
+            </div>
+          </article>
+          <!-- Designing -->
+          <article class="product">
+            <header class="product__header">
+              <figure>
+                <span class="material-icons">view_quilt</span>
+              </figure>
+              <h3>Consulting</h3>
+            </header>
+            <div class="product__body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                voluptatum ea consectetur, vero vitae inventore commodi culpa
+                illo tempora iusto eum?
+              </p>
+            </div>
+          </article>
+          <!-- Analysis -->
+          <article class="product">
+            <header class="product__header">
+              <figure>
+                <span class="material-icons">query_stats</span>
+              </figure>
+              <h3>Consulting</h3>
+            </header>
+            <div class="product__body">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                voluptatum ea consectetur, vero vitae inventore commodi culpa
+                illo tempora iusto eum?
+              </p>
+            </div>
+          </article>
+        </section>
+      </section>
+    </main>
+    <script src="index.js"></script>
   </body>
 </html>
